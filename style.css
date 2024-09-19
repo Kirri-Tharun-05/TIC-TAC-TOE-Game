@@ -1,0 +1,238 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #16325B;
+}
+.nav-heading
+{
+    color:#16325B;
+    list-style-type: none;
+    font-family: "Playpen Sans", cursive;
+    font-size: 1.5rem;
+    font-weight:600;
+
+}
+.nav{
+    display: flex;
+    height: 10vh;
+    background-color: #78B7D0;
+    align-items: center;
+    justify-content: space-between;
+    padding:0px 5rem;
+}
+
+
+.box
+{
+    display: flex;
+    justify-content: center;align-items: center;
+}
+.boxtext
+{
+    color: black;
+}
+.gameContainer
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sub-heading
+{
+    font-size: 1.5rem;
+    font-family: "SUSE", sans-serif;
+    font-weight: 500;
+    letter-spacing: 5px;
+    /* color: hsl(188.57deg 83.73% 59.02%); */
+    color: #16325B;
+    /* -webkit-text-stroke: 0.5px  hsl(189, 54%, 48%);; */
+}
+.container
+{
+    display: grid;
+    grid-template-columns:repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    font-family: "Playpen Sans", cursive;
+    margin-left:5rem;
+    margin-right: 5rem;
+    position: relative;
+}
+
+.container .box
+{
+    border: 4px solid hsl(0deg 0% 90.59%);
+    border-radius: 1rem;
+    margin: 3px;
+    font-size: 5vw;
+}
+.heading
+{
+    -webkit-text-stroke: 1px hsl(7.59deg 88.3% 36.86%);
+    font-family: "Caveat", cursive;
+    font-size: 4rem;
+    font-weight:900;
+    color: hsl(7.83deg 100% 63.92%);
+    text-shadow:1.5px 2px hsl(7.59deg 88.3% 36.86%);
+}
+
+.main-screen
+{
+    display: flex;
+}
+
+.imgbox img{
+    width: 0px;
+    margin-right: 2rem;
+    transition: width 1s ease-in-out;
+}
+
+.gameinfo button
+{
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.25rem;
+    margin: 10px;
+    border: none;
+    background-color: #78B7D0;
+    border-radius: 0.5rem;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.gameinfo h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+.info{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.main-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gameinfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-tab{
+    background-color: white;
+    height: 85vh;
+    transition: background-color 0.5s ease-in-out ;
+}
+
+.nav-sub i{
+    scale: 2;
+}
+.nav-sub{
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+@media screen and (max-width:800px) {
+    .main-screen
+    {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .gameinfo
+    {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .main-screen .container .box
+    {
+        margin: 1.5px;
+        border-radius: 0.5rem;
+        border: 2px solid hsl(0deg 0% 90.59%);
+    }
+    .gameinfo h1{
+        font-size: 1.3rem;
+    }
+    .container
+    {   
+        scale: 1.5;
+        margin-top: 1rem;
+        padding: 2rem
+    }
+    .nav{
+        padding: 0px 1rem;
+        
+    }
+    .nav-heading{
+        font-size: 1.2rem;
+    }
+    .nav-sub{
+        padding: 0px 1.5rem;
+    }
+    .nav-sub i
+    {
+        scale: 1.7;
+    }
+}
+@media screen and (min-width:800px) and (max-width:1200px)
+{
+    .gameinfo h1{
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width:620px)
+{
+    .nav {
+        padding: 0px 1.5rem;
+    }
+}
+@media screen and (min-width:500px) and (max-width:700px)
+{
+    .main-screen .container .box
+    {
+        border: 2px solid hsl(0deg 0% 90.59%);
+    }
+    .gameinfo h1{
+        font-size: 1.8rem;
+    }
+    .container
+    {   
+        scale: 1.5;
+        margin-top: 1rem;
+        padding: 2rem
+    }
+}
+
+
+.line
+{
+    height: 3px;
+    width: 0vw;
+    background-color: rgb(235, 122, 235);;
+    position: absolute; 
+    transition: width 1s ease-in-out;
+}
+
+.fa-volume-high
+{
+    position: absolute;
+}
+
+.fa-volume-off
+{
+    position: relative;
+    padding-right: 10px;
+}
+
+.nav-icons
+{
+    display: flex;
+}
